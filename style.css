@@ -22,11 +22,6 @@ header {
     border-bottom: 2px solid black;
 }
 
-header span {
-    width: auto;
-    vertical-align: middle;
-    height: inherit;
-}
 
 header h1 {
     vertical-align: middle;
