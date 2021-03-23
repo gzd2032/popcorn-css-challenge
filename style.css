@@ -5,7 +5,6 @@ Header Text - #553100
 Main background - #D4A76A*/
 
 body {
-    width: auto;
     box-sizing: border-box;
     background: #D4A76A;
     font-family: Arial, Helvetica, sans-serif;
@@ -17,8 +16,6 @@ header {
     height: 30%;
     background: #FFDBAA;
     justify-content: space-around;
-    vertical-align: middle;
-    width: auto;
     border-bottom: 2px solid black;
 }
 
@@ -31,7 +28,7 @@ header h1 {
 nav {
     display: flex;
     flex-direction: row;
-    list-style: none;
+    align-items: flex-start;
     justify-content: space-evenly;
 }
 
@@ -42,9 +39,15 @@ nav {
     font-weight: bolder;
     background: #805215;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.0rem;
     text-decoration: none;
     text-align: center;
+}
+
+.button:hover {
+    background-color: #a36003;
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 #a36003;
 }
 
 main .button,
@@ -56,7 +59,7 @@ footer .button {
 main {
     display: flex;
     justify-content: space-around;
-    margin: 40px;
+    margin: 40px 0px;
 }
 
 section {
@@ -64,15 +67,18 @@ section {
     flex-direction: column;
     background: white;
     padding: 10px 20px;
-    box-shadow: 0px 2px 10px black;
+    box-shadow: 0px 2px 10px black;   
     width: 21%;
-    
+
+}
+
+section.wide {
+    width: 90%;
 }
 
 p {
     font-size: 1.2rem;
     margin: 20px 15px;
-
 }
 
 h2 {
@@ -85,10 +91,5 @@ h2 {
 
 footer {
     display: flex;
-    flex-direction: column;
-    background: white;
-    padding: 10px 20px;
-    box-shadow: 0px 2px 10px black;
-    padding: 20px;
-    margin: 5% 5%;
+    justify-content: space-around;
 }
